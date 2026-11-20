@@ -169,7 +169,7 @@
   $("directions").href = mapsUrl;
   $("qr").src = "https://api.qrserver.com/v1/create-qr-code/?size=240x240&margin=0&color=6e3a39&data=" + encodeURIComponent(mapsUrl);
   $("qr").onerror = () => ($("qr").style.display = "none");
-  $("palace").innerHTML = palaceSVG();
+  $("palace").innerHTML = `<img src="photos/venue-art.jpg" alt="Peacocks and kalash illustration" loading="lazy" width="1010" height="638" />`;
   $("mandap").innerHTML = mandapSVG();
   document.querySelectorAll(".ink path, .ink circle").forEach((el) => el.setAttribute("pathLength", "1"));
 
