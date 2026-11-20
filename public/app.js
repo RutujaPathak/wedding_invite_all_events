@@ -126,7 +126,7 @@
       <div class="tl-text"><p class="tl-time"></p><p class="tl-name"><b></b><span></span></p><p class="tl-date"></p></div>`;
     item.querySelector(".tl-time").textContent = fmtTime(d);
     item.querySelector(".tl-name b").textContent = e.name;
-    item.querySelector(".tl-name span").textContent = e.theme ? `: ${e.theme}` : "";
+    item.querySelector(".tl-name span").textContent = e.theme || "";
     item.querySelector(".tl-date").textContent = fmtDate(d);
     tl.appendChild(item);
   });
@@ -367,7 +367,7 @@
     }
     // Start downloading right away so the song is ready by the time the envelope is tapped
     if (C.music && C.music.src) {
-      audio = Object.assign(new Audio(C.music.src), { volume: 0.25, preload: "auto" });
+      audio = Object.assign(new Audio(C.music.src), { volume: 0.5, preload: "auto" });
       audio.addEventListener("error", () => { useSynth = true; audio.pause(); if (on) startSynth(); });
       audio.addEventListener("ended", () => { seekToStart(); audio.play(); });
       audio.load();

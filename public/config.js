@@ -42,10 +42,10 @@ window.WEDDING = {
 
   // icon: haldi | mehendi | music | rings | fire | dinner | garland
   events: [
-    { name: "Haldi",                  date: "2026-12-29T15:30", end: "2026-12-29T18:00", icon: "haldi",   theme: "Kesariya Rang Mein Radhe-Shyam" },
-    { name: "Sangeet",                date: "2026-12-29T19:00", end: "2026-12-29T22:00", icon: "music",   theme: "Twinkle Twinkle, Let the Sangeet Sparkle" },
-    { name: "Vidhi",                  date: "2026-12-30T07:00", end: "2026-12-30T09:00", icon: "fire",    theme: "Nauvari cha Saaj, Dhoticha Thaath" },
-    { name: "Mangalashtaka & Varmala", date: "2026-12-30T12:00", end: "2026-12-30T15:00", icon: "garland", theme: "Shubhmangal: The Royal Attire Affair" },
+    { name: "Haldi",                  date: "2026-12-29T15:30", end: "2026-12-29T18:00", icon: "haldi",   theme: "Kesariya Rang Mein\nRadhe-Shyam" },
+    { name: "Sangeet",                date: "2026-12-29T19:00", end: "2026-12-29T22:00", icon: "music",   theme: "Twinkle Twinkle,\nLet the Sangeet Sparkle" },
+    { name: "Vidhi",                  date: "2026-12-30T07:00", end: "2026-12-30T09:00", icon: "fire",    theme: "Nauvari cha Saaj,\nDhoticha Thaath" },
+    { name: "Mangalashtaka & Varmala", date: "2026-12-30T12:00", end: "2026-12-30T15:00", icon: "garland", theme: "Shubhmangal:\nThe Royal Attire Affair" },
   ],
 
   venue: {
@@ -59,5 +59,5 @@ window.WEDDING = {
   // Background music: drop the song into public/ as music.mp3.
   // If the file is missing, a soft built-in music-box melody plays instead.
   // start: seconds to skip (this song has a ~12s quiet intro)
-  music: { src: "music.mp3?v=2", start: 12.5 },     // bump v= after replacing the file
+  music: { src: "music.mp3?v=3", start: 0 },     // intro already trimmed from the file; bump v= after replacing it
 };
